@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METQAN Clothing متقن للملابس</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CSS-Only Navigation State Control -->
+    <input type="radio" name="nav-page" id="page-home" checked>
+    <input type="radio" name="nav-page" id="page-products">
+    <input type="radio" name="nav-page" id="page-categories">
+    <input type="radio" name="nav-page" id="page-details">
+    <input type="radio" name="nav-page" id="page-about">
+    <input type="radio" name="nav-page" id="page-contact">
+<!-- 
+    Top Developer Banner
+    <div class="developer-bar">
+        <span>✨ مشروع معرض أعمال (Portfolio Project) | تصميم وتطوير المهندس: <strong>عبد الرحمن علاء نصار</strong></span>
+    </div> -->
+
+    <!-- Header & Navigation Bar -->
+    <header class="main-header">
+        <div class="container header-container">
+            <label for="page-home" class="logo">
+                <span class="logo-ar">مُتْقَن</span>
+                <span class="logo-en">METQAN</span>
+            </label>
+
+            <nav class="navbar">
+                <label for="page-home" class="nav-link nav-home">الرئيسية</label>
+                <label for="page-products" class="nav-link nav-products">المنتجات</label>
+                <label for="page-categories" class="nav-link nav-categories">الأقسام</label>
+                <label for="page-details" class="nav-link nav-details">تفاصيل المنتج</label>
+                <label for="page-about" class="nav-link nav-about">عن المشروع</label>
+                <label for="page-contact" class="nav-link nav-contact">تواصل معي</label>
+            </nav>
+
+            <div class="header-actions">
+                <label for="page-products" class="btn-cart">🛍️ السلة (3)</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT PAGES -->
+    <main class="content-wrapper">
+
+        <!-- PAGE 1: HOME -->
+        <section class="page-section section-home">
+            <div class="hero-banner">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <span class="badge">تشكيلة شتاء 2026</span>
+                    <h1>الأناقة الإيطالية بلمسة عربية مُتقَنة</h1>
+                    <p>اكتشف أحدث صيحات الموضة الرجالية والنسائية المصنوعة بأعلى معايير الجودة والتصميم الراقي.</p>
+                    <div class="hero-btns">
+                        <label for="page-products" class="btn btn-primary">تسوق المجموعة الآن</label>
+                        <label for="page-about" class="btn btn-outline">تفاصيل المشروع</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Bar -->
+            <div class="features-bar">
+                <div class="container features-grid">
+                    <div class="feature-item">
+                        <div class="icon">✨</div>
+                        <div>
+                            <h4>خامات عالية الجودة</h4>
+                            <p>أقمشة ممتازة فاخرة 100%</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🚚</div>
+                        <div>
+                            <h4>شحن سريع</h4>
+                            <p>توصيل لجميع المحافظات</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🔄</div>
+                        <div>
+                            <h4>استبدال واسترجاع</h4>
+                            <p>مرونة كاملة خلال 14 يوم</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Products Carousel / Grid -->
+            <div class="container section-padding">
+                <div class="section-header">
+                    <h2>الأكثر مبيعاً هذا الأسبوع</h2>
+                    <label for="page-products" class="view-all">عرض الكل ←</label>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <span class="tag">جديد</span>
+                        <div class="prod-img img-1"></div>
+                        <div class="prod-info">
+                            <span class="category-name">معاطف وجواكت</span>
+                            <h3>سترة صوفية فاخرة باللون الكحلي</h3>
+                            <div class="price">1,850 ج.م <del>2,200 ج.م</del></div>
+                            <label for="page-details" class="btn-card">عرض التفاصيل</label>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="prod-img img-2"></div>
+                        <div class="prod-info">
+                            <span class="category-name">قمصان رسمية</span>
+                            <h3>قميص أبيض كلاسيكي أكسفورد</h3>
+                            <div class="price">750 ج.م</div>
+                            <label for="page-details" class="btn-card">عرض التفاصيل</label>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <span class="tag discount">-20%</span>
+                        <div class="prod-img img-3"></div>
+                        <div class="prod-info">
+                            <span class="category-name">ملابس كاجوال</span>
+                            <h3>هودي قطني بلون البيج الدافئ</h3>
+                            <div class="price">920 ج.م <del>1,150 ج.م</del></div>
+                            <label for="page-details" class="btn-card">عرض التفاصيل</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: PRODUCTS -->
+        <section class="page-section section-products">
+            <div class="container section-padding">
+                <div class="page-title">
+                    <h1>معرض المنتجات</h1>
+                    <p>استعرض جميع التشكيلات المتاحة مع خيارات الفلترة المتقدمة</p>
+                </div>
+
+                <div class="shop-layout">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar">
+                        <h3>تصفية المنتجات</h3>
+                        <div class="filter-group">
+                            <h4>الأقسام</h4>
+                            <label><input type="checkbox" checked> ملابس رجالي</label>
+                            <label><input type="checkbox"> ملابس حريمي</label>
+                            <label><input type="checkbox"> إكسسوارات</label>
+                            <label><input type="checkbox"> أحذية جلدية</label>
+                        </div>
+                        <div class="filter-group">
+                            <h4>النطاق السعري</h4>
+                            <input type="range" min="200" max="5000" value="2500">
+                            <div class="price-range-text">من 200 ج.م إلى 5,000 ج.م</div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>المقاس</h4>
+                            <div class="sizes-list">
+                                <span class="size-btn">S</span>
+                                <span class="size-btn active">M</span>
+                                <span class="size-btn active">L</span>
+                                <span class="size-btn">XL</span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <span class="tag">جديد</span>
+                            <div class="prod-img img-1"></div>
+                            <div class="prod-info">
+                                <span class="category-name">معاطف</span>
+                                <h3>سترة صوفية فاخرة باللون الكحلي</h3>
+                                <div class="price">1,850 ج.م</div>
+                                <label for="page-details" class="btn-card">تفاصيل المنتج</label>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="prod-img img-2"></div>
+                            <div class="prod-info">
+                                <span class="category-name">قمصان</span>
+                                <h3>قميص أبيض كلاسيكي أكسفورد</h3>
+                                <div class="price">750 ج.م</div>
+                                <label for="page-details" class="btn-card">تفاصيل المنتج</label>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <span class="tag discount">-20%</span>
+                            <div class="prod-img img-3"></div>
+                            <div class="prod-info">
+                                <span class="category-name">كاجوال</span>
+                                <h3>هودي قطني بلون البيج الدافئ</h3>
+                                <div class="price">920 ج.م</div>
+                                <label for="page-details" class="btn-card">تفاصيل المنتج</label>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="prod-img img-4"></div>
+                            <div class="prod-info">
+                                <span class="category-name">بنطال</span>
+                                <h3>بنطال تشينو زيتي كلاسيك</h3>
+                                <div class="price">890 ج.م</div>
+                                <label for="page-details" class="btn-card">تفاصيل المنتج</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: CATEGORIES -->
+        <section class="page-section section-categories">
+            <div class="container section-padding">
+                <div class="page-title">
+                    <h1>تصفح حسب القسم</h1>
+                    <p>اختر التصنيف المناسب لاكتشاف المنتجات المصممة بخصيصاً لراحتك</p>
+                </div>
+
+                <div class="categories-grid">
+                    <label for="page-products" class="category-card cat-1">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <h3>المجموعة الرجالية</h3>
+                            <p>بدل، قمصان، ومعاطف شتوية فاخرة</p>
+                            <span class="cat-btn">استكشف القسم ←</span>
+                        </div>
+                    </label>
+
+                    <label for="page-products" class="category-card cat-2">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <h3>المجموعة النسائية</h3>
+                            <p>فساتين، أزياء رسمية وكاجوال متقنة</p>
+                            <span class="cat-btn">استكشف القسم ←</span>
+                        </div>
+                    </label>
+
+                    <label for="page-products" class="category-card cat-3">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <h3>الإكسسوارات والأحذية</h3>
+                            <p>أحزمة، أحذية جلدية، وساعات أنيقة</p>
+                            <span class="cat-btn">استكشف القسم ←</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: PRODUCT DETAILS -->
+        <section class="page-section section-details">
+            <div class="container section-padding">
+                <div class="product-details-wrapper">
+                    <div class="details-gallery">
+                        <div class="main-image img-1"></div>
+                        <div class="thumbs">
+                            <div class="thumb img-1 active"></div>
+                            <div class="thumb img-2"></div>
+                            <div class="thumb img-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="details-content">
+                        <span class="badge">المقاسات متوفرة</span>
+                        <h1>سترة صوفية فاخرة باللون الكحلي - METQAN Special</h1>
+                        <div class="price-box">
+                            <span class="current-price">1,850 ج.م</span>
+                            <span class="old-price">2,200 ج.م</span>
+                            <span class="save-tag">توفير 350 ج.م</span>
+                        </div>
+
+                        <p class="description">
+                            مصنوعة من الصوف الطبيعي 100% بتصميم عصري وأنيق يناسب الأجواء الشتوية الرسمية والكاجوال. تتميز ببطانة داخلية حريرية مريحة للغاية ومقاومة للتجعد.
+                        </p>
+
+                        <div class="option-group">
+                            <label class="option-title">المقاس:</label>
+                            <div class="size-options">
+                                <button class="btn-size">Small</button>
+                                <button class="btn-size active">Medium</button>
+                                <button class="btn-size">Large</button>
+                                <button class="btn-size">X-Large</button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-title">الكمية:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn">-</button>
+                                <input type="number" value="1" readonly>
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-block">إضافة إلى السلة 🛒</button>
+                            <label for="page-contact" class="btn btn-outline btn-block">طلب خاص / استفسار</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: ABOUT -->
+        <section class="page-section section-about">
+            <div class="container section-padding">
+                <div class="developer-showcase-card">
+                    <div class="dev-badge">Frontend Developer Showcase</div>
+                    <h2>عن مشروع متجر METQAN Clothing</h2>
+                    <p class="dev-intro">
+                        هذا الموقع عبارة عن نموذج عمل وموقع استعراضي (Portfolio Project) تم تصميمه وتطويره بالكامل بواسطة:
+                    </p>
+                    <div class="dev-name-box">
+                        <h3>👨‍💻 عبد الرحمن علاء نصار</h3>
+                        <p>مطور واجهات المستخدم | Frontend Web Developer</p>
+                    </div>
+
+                    <!-- <div class="tech-stack">
+                        <h4>التقنيات المستخدمة في هذا المشروع:</h4>
+                        <div class="tags-container">
+                            <span class="tech-tag">Pure HTML5</span>
+                            <span class="tech-tag">Pure CSS3 (No JavaScript)</span>
+                            <span class="tech-tag">CSS Flexbox & Grid</span>
+                            <span class="tech-tag">Responsive Web Design</span>
+                            <span class="tech-tag">CSS State Management (Radio Hack)</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: CONTACT -->
+        <section class="page-section section-contact">
+            <div class="container section-padding">
+                <div class="page-title">
+                    <h1>تواصل معي</h1>
+                    <p>إذا كنت ترغب في رؤية المزيد من أعمالي أو مناقشة مشروع جديد، يسعدني تواصلك</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>معلومات التواصل الشخصية</h3>
+                        <p>هذا النموذج مخصص لمعرض الأعمال الشخصي الخاص بعبد الرحمن علاء نصار.</p>
+                        
+                        <div class="info-item">
+                            <div class="icon">👤</div>
+                            <div>
+                                <strong>الاسم:</strong>
+                                <p>عبد الرحمن علاء نصار</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon">💼</div>
+                            <div>
+                                <strong>المسمى الوظيفي:</strong>
+                                <p>مطور واجهات ومصمم مواقع Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon">📍</div>
+                            <div>
+                                <strong>الموقع:</strong>
+                                <p>مصر (Egypt)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="return false;">
+                        <h3>إرسال رسالة مباشرة</h3>
+                        <div class="form-group">
+                            <label>الاسم الكامل</label>
+                            <input type="text" placeholder="أدخل اسمك هنا..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" placeholder="abonasarabdalrhmanalaa2010@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>نص الرسالة</label>
+                            <textarea rows="5" placeholder="اكتب تفاصيل استفسارك أو طلبك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>METQAN | مُتْقَن</h3>
+                <p>نموذج متجر إلكتروني متكامل مصمم بمهارة وعناية فائقة ليعكس أعلى مستويات جودة التكوين والتجربة.</p>
+            </div>
+            <div class="footer-links">
+                <h4>تنقل سريع</h4>
+                <label for="page-home">الرئيسية</label>
+                <label for="page-products">المنتجات</label>
+                <label for="page-categories">الأقسام</label>
+                <label for="page-about">عن المشروع</label>
+            </div>
+            <div class="footer-dev">
+                <h4>عن المطور</h4>
+                <p>تم تصميم وتطوير هذا الواجهة بواسطة <strong>عبد الرحمن علاء نصار</strong> كنموذج إبداعي في ملف الأعمال.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 جميع الحقوق محفوظة | تم التطوير بـ  بواسطة <strong>عبد الرحمن علاء نصار</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
